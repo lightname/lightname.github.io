@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: 'gatsby-starter-code-notes',
-    description: `A starter for gatsby-theme-code-notes`,
-    author: 'Zander',
+    title: 'The Dev Note',
+    description: `The Dev Note`,
+    author: 'S.Kane',
   },
   plugins: [
     {
@@ -10,18 +10,18 @@ module.exports = {
       options: {
         contentPath: 'notes',
         basePath: '/',
-        showThemeInfo: true,
+        showThemeInfo: false,
         showDescriptionInSidebar: true,
         showDate: true,
         // gitRepoContentPath: 'https://github.com/mrmartineau/gatsby-starter-code-notes/tree/master/notes',
-        // openSearch: {
-        //   siteShortName: `My Code Notes`,
-        //   siteUrl: 'https://my-website.com',
-        //   siteTags: 'code',
-        //   siteContact: 'https://twitter.com/???',
-        //   siteDescription:
-        //     'Code Notes',
-        // },
+        openSearch: {
+           siteShortName: `The Dev Note`,
+           siteUrl: 'http://localhost:8000',
+           siteTags: 'code',
+           siteContact: 'http://localhost:8000',
+           siteDescription:
+             'The Dev Note',
+        },
       },
     },
   ],
